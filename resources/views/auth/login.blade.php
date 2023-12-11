@@ -5,6 +5,10 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
+        <a href='auth/google' class="w-full flex items-center justify-center bg-red-600 rounded py-2 text-white hover:bg-red-500 hover:text-black delay-100"><i class="fa-brands fa-google mr-2"></i> Login by Google</a>
+        <a href='auth/facebook' class="w-full flex items-center justify-center bg-red-600 rounded py-2 text-white hover:bg-red-500 hover:text-black delay-100"><i class="fa-brands fa-google mr-2"></i> Login by Google</a>
+
+
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />

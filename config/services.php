@@ -31,4 +31,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => env('client_id'),
+        'client_secret' => env('client_secret'),
+        'redirect' => "http://localhost:8000/auth/google/callback",
+    ],
+
+    'facebook' => [
+        'client_id' => "902454971461374",
+        'client_secret' => "2827d1af287471d84fbed34d27742f76",
+        'redirect' => "http://localhost:8000/auth/facebook/callback",
+    ],
+
 ];

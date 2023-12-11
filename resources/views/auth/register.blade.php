@@ -2,9 +2,9 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <a href='#' class="w-full flex items-center justify-center bg-red-600 rounded py-2 text-white hover:bg-red-500 hover:text-black delay-100"><i class="fa-brands fa-google mr-2"></i> Register by Google</a>
+        <a href='auth/google' class="w-full flex items-center justify-center bg-red-600 rounded py-2 text-white hover:bg-red-500 hover:text-black delay-100"><i class="fa-brands fa-google mr-2"></i> Register by Google</a>
 
-        <a href='#' class="w-full flex items-center justify-center bg-blue-600 rounded py-2 my-2 text-white hover:bg-blue-500 hover:text-black delay-100"><i class="fa-brands fa-facebook mr-2"></i> Register by facebook</a>
+        <a href='auth/facebook' class="w-full flex items-center justify-center bg-blue-600 rounded py-2 my-2 text-white hover:bg-blue-500 hover:text-black delay-100"><i class="fa-brands fa-facebook mr-2"></i> Register by facebook</a>
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
